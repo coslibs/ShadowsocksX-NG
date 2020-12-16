@@ -82,7 +82,7 @@ class ServerProfile: NSObject, NSCopying {
             if let index = base64End {
                 let i = urlStr.index(index, offsetBy: 1)
                 let fragment = String(urlStr[i...])
-                return (s, fragment)
+                return (s, fragment.removingPercentEncoding)
             }
             return (s, nil)
         }
@@ -328,7 +328,7 @@ class ServerProfile: NSObject, NSCopying {
         if remark.isEmpty {
             return "\(serverHost):\(serverPort)"
         } else {
-            return "\(remark) (\(serverHost):\(serverPort))"
+            return "\(String(remark.prefix(24))) (\(serverHost):\(serverPort))"
         }
     }
     

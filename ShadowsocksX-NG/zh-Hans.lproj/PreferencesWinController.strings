@@ -52,8 +52,8 @@
 /* Class = "NSTextFieldCell"; title = "Num of Kcptun connections:"; ObjectID = "FSi-9j-QBe"; */
 "FSi-9j-QBe.title" = "Num of Kcptun connections:";
 
-/* Class = "NSTextFieldCell"; title = "Local PAC Server Listen Address:"; ObjectID = "80e-Qu-r2S"; */
-"80e-Qu-r2S.title" = "本地PAC服务器监听地址:";
+/* Class = "NSButtonCell"; title = "Local PAC Server Bind To Localhost"; ObjectID = "oCf-id-PAx"; */
+"oCf-id-PAx.title" = "本地PAC服务器监听localhost";
 
 /* Class = "NSTextFieldCell"; title = "Local PAC Server Listen Port:"; ObjectID = "IMQ-c4-gmc"; */
 "IMQ-c4-gmc.title" = "本地PAC服务器监听端口:";
@@ -135,3 +135,9 @@
 
 /* Class = "NSButtonCell"; title = "Set HTTP proxy to system proxy configure in global mode"; ObjectID = "m8L-D6-ye3"; */
 "m8L-D6-ye3.title" = "全局模式时，在系统代理中设置HTTP代理服务器";
+
+/* Class = "NSTextFieldCell"; title = "External PAC URL:"; ObjectID = "kBe-eq-uZL"; */
+"kBe-eq-uZL.title" = "外部PAC URL:";
+
+/* Class = "NSButtonCell"; title = "Reset Preferences"; ObjectID = "mQC-AR-HXC"; */
+"mQC-AR-HXC.title" = "重置偏好设置";

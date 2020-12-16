@@ -130,6 +130,7 @@ class PreferencesWindowController: NSWindowController
     }
     
     @IBAction func cancel(_ sender: NSButton) {
+        profileMgr.reload()
         window?.performClose(self)
     }
     
@@ -250,7 +251,7 @@ class PreferencesWindowController: NSWindowController
         let profile = profileMgr.profiles[index]
         let isActive = (profileMgr.activeProfileId == profile.uuid)
         if !profile.remark.isEmpty {
-            return (profile.remark, isActive)
+            return (String(profile.remark.prefix(24)), isActive)
         } else {
             return (profile.serverHost, isActive)
         }
